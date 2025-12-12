@@ -1,0 +1,50 @@
+@use './variables' as *;
+
+.b-header {
+    margin-bottom: 32px;
+    padding: 0 20px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        padding: 16px 40px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+        border-radius: 0 0 8px 8px;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__menu-icon {
+        background-color: #F6F7FA;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+    }
+
+    &__menu-item {
+        gap: 8px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 500;
+        color: $text-color;
+        line-height: 140%;
+    }
+
+    &__position {
+        font-size: 12px;
+        color: $text-color-light-grey;
+        line-height: 140%;
+    }
+}

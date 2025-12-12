@@ -1,0 +1,89 @@
+@use './variables' as *;
+
+.b-order {
+    color: $text-color;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__container {
+        border-radius: 16px;
+        background-color: $bg-white;
+        padding: 24px 20px;
+    }
+
+    &__label-list {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    &__label-item {
+        font-size: 14px;
+        line-height: 140%;
+        padding: 8px 12px;
+        background-color: $bg-grey;
+        border-radius: 40px;
+
+        &.avance {
+            background-color: $avance-bg;
+        }
+    }
+
+    &__table {
+        display: flex;
+        gap: 60px;
+        margin-bottom: 8px;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    &__row {
+        &:nth-child(2) {
+            font-weight: 600;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 20px;
+        line-height: 160%;
+
+        span {
+            font-size: 16px;
+            padding-bottom: 4px;
+        }
+
+        p {
+            font-size: 14px;
+            color: $color-black-text;
+            font-weight: 500;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+            max-width: max-content;
+        }
+    }
+
+    &__show-more-btn {
+        margin-top: 4px;
+        color: $text-color-light-grey;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        font-size: 14px;
+    }
+}

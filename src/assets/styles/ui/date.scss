@@ -1,0 +1,80 @@
+// form
+@use '../variables' as *;
+
+.f-date {
+    .dp__main * {
+        direction: rtl;
+    }
+
+    .dp__input {
+        height: 60px;
+        border-radius: 12px;
+        padding-left: 24px;
+        text-align: left;
+        border-color: #ADADAD;
+    }
+
+    .dp__input_focus {
+        border-color: #1928F0;
+    }
+
+    .dp--clear-btn {
+        display: none;
+    }
+
+    &:has(.dp__input_focus) {
+        .f-date__title {
+            top: 0;
+            font-size: 14px;
+            padding: 0 4px;
+            color: #1928F0;
+        }
+    }
+
+    .dp__main.selected {
+        & + .f-date__title {
+            top: 0;
+            font-size: 14px;
+            padding: 0 4px;
+            color: #1928F0;
+        }
+
+        .dp__input {
+            border-color: #1928F0;
+        }
+    }
+
+    .dp__main.error {
+        .dp__input {
+            border-color: $required-color;
+        } 
+
+        & + .f-date__title {
+            color: $required-color;
+            top: 0;
+            font-size: 14px;
+            padding: 0 4px;
+        }
+    }
+
+    .dp__main.required + .f-date__title {
+        &::after {
+            content: "*";
+        }
+    }
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        transition: top 0.2s ease-in-out;
+        background-color: white;
+        font-size: 16px;
+        color: #ADADAD;
+    }
+}
