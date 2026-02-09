@@ -13,10 +13,14 @@
   },
   "dependencies": {
     "@vuepic/vue-datepicker": "^12.1.0",
+    "gsap": "^3.14.2",
     "pinia": "^3.0.4",
+    "primevue": "^4.5.4",
     "vue": "^3.5.22",
     "vue-router": "4",
-    "vue-select": "^4.0.0-beta.6"
+    "vue-select": "^4.0.0-beta.6",
+    "vue-virtual-scroll-grid": "^1.11.0",
+    "vue3-virtual-scroller": "^0.2.3"
   },
   "devDependencies": {
     "@types/node": "^25.0.1",

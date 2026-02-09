@@ -1,7 +1,10 @@
 <template>
     <header class="b-header">
         <div class="b-header__container container">
-            <div class="b-header__left"></div>
+            <div class="b-header__left">
+                <router-link :to="{name: 'OrderDetail', params: {id: 1}}">Заказ</router-link>
+                <router-link :to="{name: 'Demo'}">Demo</router-link>
+            </div>
             <div class="b-header__right">
                 <div class="b-header__menu">
                     <div class="b-header__menu-item">

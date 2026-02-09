@@ -6,7 +6,6 @@ type ValidatorFn = (value: any) => boolean;
 export const useValidation = () => {
     const builtInValidators: Record<string, ValidatorFn> = {
         required(value: any) {
-            console.log('val', value);
             if (value === null || value === undefined) return false;
             if (typeof value === 'string' && value.trim() === '') return false;
             return true;

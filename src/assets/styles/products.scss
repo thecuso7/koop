@@ -1,0 +1,15 @@
+@use './variables' as *;
+
+.b-products {
+    padding: 24px;
+    background-color: $bg-white;
+    border-radius: 24px;
+
+    @media (max-width: $breakpoint-md) {
+        gap: 32px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 16px;
+    }
+}

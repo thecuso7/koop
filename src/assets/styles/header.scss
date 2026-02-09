@@ -47,4 +47,15 @@
         color: $text-color-light-grey;
         line-height: 140%;
     }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
 }
